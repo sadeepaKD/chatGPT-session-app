@@ -1,0 +1,72 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    margin: 0;
+    background: #343541;
+    color: #d1d5db;
+    display: flex;
+    height: 100vh;
+}
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #40414f;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.chat-header {
+    padding: 10px;
+    background: #202123;
+    text-align: center;
+}
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+.user-message {
+    background: #0b93f6;
+    color: white;
+    margin-left: auto;
+}
+.gpt-message {
+    background: #444654;
+    color: #d1d5db;
+}
+.chat-input-area {
+    padding: 20px;
+    border-top: 1px solid #555;
+    display: flex;
+    gap: 10px;
+}
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    resize: none;
+    background: #40414f;
+    color: #d1d5db;
+}
+button {
+    padding: 10px 20px;
+    background: #10a37f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0c7b5f;
+}
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
